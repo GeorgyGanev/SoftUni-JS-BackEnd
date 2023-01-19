@@ -33,12 +33,5 @@
     "breed": "wild cat",
     "description": "Tabby",
     "imageUrl": "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg"
-  },
-  {
-    "id": "asdf-9780",
-    "name": "Blacky",
-    "breed": "European Shorthair",
-    "description": "Black cat",
-    "imageUrl": "https://m.economictimes.com/thumb/msid-95129274,width-1600,height-1066,resizemode-4,imgsize-59990/national-black-cat-day-see-why-us-celebrates-this-occasion.jpg"
   }
 ]

@@ -20,13 +20,21 @@ async function addBreed(breed){
         "type": breed
     });
 
-    createPromise('./services/breeds.json', breeds)
+    createPromise('./services/breeds.json', breeds);
 }
 
 async function addCat(catData){
     cats.push(catData);
 
-    createPromise('./services/data.json', cats)
+    createPromise('./services/data.json', cats);
+}
+
+async function deleteCat(catId){
+    const cat = getById(catId);
+    const index = cats.indexOf(cat);
+    cats.splice(index, 1);
+
+    createPromise('./services/data.json', cats);
 }
 
 function createPromise(path, data){
@@ -46,5 +54,6 @@ module.exports = {
     getById,
     getBreeds,
     addBreed,
-    addCat
+    addCat,
+    deleteCat
 }
