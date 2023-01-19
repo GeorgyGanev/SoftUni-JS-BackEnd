@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     const {search} = req.query;
 
     if (search){
-        cats = cats.filter(cat => cat.name.toLowerCase().includes(search.toLowerCase()));
+        cats = cats.filter(cat => cat.breed.toLowerCase().includes(search.toLowerCase()));
     }
 
     res.render('home', {
