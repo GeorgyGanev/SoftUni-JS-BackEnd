@@ -1,0 +1,17 @@
+
+<form action="/search">
+            <input type="text">
+            <button type="button">Search</button>
+</form>
+
+<section class="cats">
+    {{#if cats}}
+            <ul>
+               {{#each cats}}
+               {{> catCard}}
+               {{/each}} 
+            </ul>
+    {{else}}
+        <p><i>No cats available!</i></p>
+    {{/if}}
+ </section>
