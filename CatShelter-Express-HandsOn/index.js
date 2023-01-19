@@ -4,6 +4,7 @@ const hbr = require('express-handlebars');
 const homeController = require('./controllers/homeController');
 const addCatController = require('./controllers/addCatController');
 const addBreedController = require('./controllers/addBreedController');
+const editCatController = require('./controllers/editCatController');
 
 const handlebars = hbr.create({
     extname: '.hbs'
@@ -21,6 +22,7 @@ app.use('/static', express.static('static'));
 app.use(homeController);
 app.use('/add-cat', addCatController);
 app.use('/add-breed', addBreedController);
+app.use('/edit', editCatController);
 
 app.listen(3000);
 console.log('app listening...');
